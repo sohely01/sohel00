@@ -1,0 +1,106 @@
+/* General Container */
+.Add_task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background-color: #f9fafb;
+    min-height: 100vh;
+  }
+  
+  /* Individual Column Styling */
+  .Add_task_column {
+    width: 400px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Column Header */
+  .task_top {
+    background: #3b82f6;
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Add Task Section */
+  .board_add_task {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .task_input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .add_task_button {
+    background: green;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .add_task_button:hover {
+    background: #2563eb;
+  }
+  
+  /* Task List */
+  .task_list {
+    list-style: none;
+    margin: 0;
+    padding: 12px;
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+  .task_item {
+    background: #e0f2fe;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    border: 1px solid #bae6fd;
+  }
+  
+  /* Hover effect for task items */
+  .task_item:hover {
+    background: #bae6fd;
+    cursor: pointer;
+  }
+  
+  /* Scrollbar Styling */
+  .task_list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .task_list::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  
+  .task_list::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 4px;
+  }
+  
+  .task_list::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+  }
+  
