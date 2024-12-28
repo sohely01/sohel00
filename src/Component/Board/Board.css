@@ -297,3 +297,13 @@
 .task_item:active {
   cursor: grabbing;
 }
+
+
+
+
+@media screen and (max-width:450px) {
+  .board{
+    display: flex;
+    flex-direction: column;
+  }
+}

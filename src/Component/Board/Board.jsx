@@ -29,15 +29,18 @@ const Board = ({ tasks, onUpdateTask }) => {
   return (
     <div className="board">
       {columns.map(({ key, title }) => (
-        <div key={key} className="board_column">
-          <div className="board_top">
+          <div className="container">
+            <div className="box">
+              <div className="col-md-3">
+              <div key={key} className="board_column">
+              <div className="board_top">
             <p className="board_top_title">
               {title}
               <span>
                 {tasks.filter((task) => task.status === key).length}
               </span>
             </p>
-            <MoreHorizontal />
+            {/* <MoreHorizontal /> */}
           </div>
 
           <ul className="task_list">
@@ -54,6 +57,10 @@ const Board = ({ tasks, onUpdateTask }) => {
               ))}
           </ul>
         </div>
+              </div>
+            </div>
+          </div>
+        
       ))}
 
       {selectedTask && (
